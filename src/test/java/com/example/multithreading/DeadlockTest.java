@@ -1,4 +1,4 @@
-package com.example.test;
+package com.example.multithreading;
 
 import org.junit.Test;
 
