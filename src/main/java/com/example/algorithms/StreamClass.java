@@ -1,4 +1,4 @@
-package com.example.multithreading;
+package com.example.algorithms;
 
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;

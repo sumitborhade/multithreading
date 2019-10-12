@@ -1,4 +1,7 @@
 package com.example.multithreading;
+
+import com.example.multithreading.util.CommonUtils;
+
 /**<b>Situation</b>:<br/>
  * Deadlock occurs when Thread-A holds lock 1 and waits for lock 2.<br/>
  * At the same time, Thread-B holds lock 2 and waits for lock 1.<br/>
@@ -20,7 +23,7 @@ public class Deadlock {
 	public void producer() {
 		synchronized (lock1) {
 			System.out.println(threadName() + " has acquired lock1.");
-			sleep(2000);
+			CommonUtils.sleep(2000);
 			synchronized (lock2) {
 				System.out.println(threadName() + " has acquired lock2.");
 				System.out.println("In P");
@@ -35,14 +38,6 @@ public class Deadlock {
 				System.out.println(threadName() + " has acquired lock1.");
 				System.out.println("In C");
 			}
-		}
-	}
-	
-	private static void sleep(int wait) {
-		try {
-			Thread.sleep(wait);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
 		}
 	}
 	

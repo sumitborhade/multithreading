@@ -3,6 +3,8 @@ package com.example.multithreading;
 import java.util.Random;
 import java.util.concurrent.BlockingQueue;
 
+import com.example.multithreading.util.CommonUtils;
+
 public class ProducerConsumerBlockingQueue {
 	
 	Random random = new Random();
@@ -17,7 +19,7 @@ public class ProducerConsumerBlockingQueue {
 			int number = random.nextInt(100);
 			queue.add(number);
 			System.out.println(number + " has been added.");
-			sleep(1000);
+			CommonUtils.sleep(1000);
 		}
 		
 	}
@@ -31,14 +33,6 @@ public class ProducerConsumerBlockingQueue {
 					e.printStackTrace();
 				}
 			}
-		}
-	}
-	
-	private static void sleep(int wait) {
-		try {
-			Thread.sleep(wait);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
 		}
 	}
 }
