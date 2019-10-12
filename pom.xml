@@ -9,8 +9,8 @@
 		<version>2.1.2.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.test</groupId>
-	<artifactId>problem-solving</artifactId>
+	<groupId>com.example</groupId>
+	<artifactId>multithreading</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>test</name>
 	<description>Demo project for Spring Boot</description>

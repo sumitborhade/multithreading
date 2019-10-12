@@ -1,4 +1,4 @@
-package com.test.multithreading;
+package com.example.multithreading;
 
 public class WaitNotifyTest {
 

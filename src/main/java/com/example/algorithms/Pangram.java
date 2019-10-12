@@ -1,4 +1,4 @@
-package com.test.algorithms;
+package com.example.algorithms;
 
 public class Pangram {
 
